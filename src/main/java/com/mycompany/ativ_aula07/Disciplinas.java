@@ -18,15 +18,21 @@ public class Disciplinas {
         String d[] = {"Português", "Matemática", "Física", "História", "Geografia"};
         double nota[] = new double[5];
         String result = "";
+        double soma = 0;
         
         for (int i = 0; i < d.length; i++) {
             nota[i] = Double.parseDouble(JOptionPane.showInputDialog("Nota de " + d[i]));
             result += d[i] + ": " + nota[i] + "\n";
-            
+           soma += nota[i];
         }
+            
+        double media = soma/5;
         JOptionPane.showMessageDialog(null, result);
+        JOptionPane.showMessageDialog(null, "A média geral é: " + media);
         
     }
         
 }
+        
+        
     
