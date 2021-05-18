@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class Disciplinas {
     
-    public void atividade01(){
+    public void atividade02(){
         
         String d[] = {"Português", "Matemática", "Física", "História", "Geografia"};
         double nota[] = new double[5];
