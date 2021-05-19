@@ -15,8 +15,8 @@ import javax.swing.JOptionPane;
 public class Pesquisa {
     public void atividade03(){
         
-        String d[] = {"1 - Português", "2 - Matemática", "3 - Física", "4 - História", " 5 - Geografia"};
-        int[] vetor = {1,2,3,4,5}; 
+        String d[] = {"0 - Português", "1 - Matemática", "2 - Física", "3 - História", " 4 - Geografia"};
+        int[] vetor = {0,1,2,3,4}; 
         double nota[] = new double[5];
         String result = "";
         
@@ -26,10 +26,12 @@ public class Pesquisa {
             result += d[i] + ": " + nota[i] + "\n";
            
         }
-            
+           
+           
         JOptionPane.showMessageDialog(null, result);
-        Integer.parseInt(JOptionPane.showInputDialog("Escolha o codigo  da Disciplina: " + Arrays.toString(d) ));
-        JOptionPane.showMessageDialog(null, nota);
+        int indice = Integer.parseInt(JOptionPane.showInputDialog("Escolha o codigo  da Disciplina(de 0 a 4): " ));
+        JOptionPane.showMessageDialog(null,  nota[indice]);
+        
         
         
         
