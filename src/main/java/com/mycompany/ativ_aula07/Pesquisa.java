@@ -16,7 +16,7 @@ public class Pesquisa {
     public void atividade03(){
         
         String d[] = {"0 - Português", "1 - Matemática", "2 - Física", "3 - História", " 4 - Geografia"};
-        int[] vetor = {0,1,2,3,4}; 
+         
         double nota[] = new double[5];
         String result = "";
         
@@ -29,8 +29,8 @@ public class Pesquisa {
            
            
         JOptionPane.showMessageDialog(null, result);
-        int indice = Integer.parseInt(JOptionPane.showInputDialog("Escolha o codigo  da Disciplina(de 0 a 4): " ));
-        JOptionPane.showMessageDialog(null,  nota[indice]);
+        int indice = Integer.parseInt(JOptionPane.showInputDialog("Escolha o codigo  da Disciplina(de 0 a 4): "));
+        JOptionPane.showMessageDialog(null,  d[indice] + " Nota: " + nota[indice]);
         
         
         
