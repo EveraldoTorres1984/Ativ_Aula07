@@ -5,7 +5,7 @@
  */
 package com.mycompany.ativ_aula07;
 
-import java.util.Arrays;
+
 import javax.swing.JOptionPane;
 
 /**
